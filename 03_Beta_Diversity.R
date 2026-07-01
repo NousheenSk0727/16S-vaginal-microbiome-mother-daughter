@@ -95,7 +95,7 @@ ggplot(plot_df_j_nr, aes(x = Comparison, y = Jaccard, fill = Comparison)) +
   scale_color_manual(values = c("Paired" = "#534AB7", "Unpaired" = "#D85A30")) +
   theme(legend.position = "none") +
   labs(
-    title = "Jaccard Similarity - Paired vs Unpaired (Non-Rarefied)",
+    title = "Jaccard Similarity - Paired vs Unpaired",
     x     = NULL,
     y     = "Jaccard Similarity"
   )
@@ -164,7 +164,7 @@ ggplot(plot_df_bc, aes(x = Comparison, y = BrayCurtis, fill = Comparison)) +
   scale_color_manual(values = c("Paired" = "#534AB7", "Unpaired" = "#D85A30")) +
   theme(legend.position = "none") +
   labs(
-    title = "Bray-Curtis Similarity - Paired vs Unpaired (Non-Rarefied)",
+    title = "Bray-Curtis Similarity - Paired vs Unpaired",
     x     = NULL,
     y     = "Bray-Curtis Similarity"
   )

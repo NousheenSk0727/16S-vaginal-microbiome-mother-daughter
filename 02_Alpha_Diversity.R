@@ -45,7 +45,7 @@ ggplot(shannon_df, aes(x = Group, y = Shannon, fill = Group)) +
     comparisons = list(c("Mother", "Daughter"))
   ) +
   labs(
-    title = "Shannon Diversity by Group (Non-Rarefied)",
+    title = "Shannon Diversity by Group",
     x     = "Group",
     y     = "Shannon Index"
   )
@@ -121,7 +121,7 @@ ggplot(shannon_diff_nr, aes(x = Comparison, y = Shannon_Diff, fill = Comparison)
   scale_color_manual(values = c("Paired" = "#534AB7", "Unpaired" = "#D85A30")) +
   theme(legend.position = "none") +
   labs(
-    title = "Shannon Difference - Paired vs Unpaired (Non-Rarefied)",
+    title = "Shannon Difference - Paired vs Unpaired",
     x     = NULL,
     y     = "|Shannon Difference|"
   )
@@ -155,7 +155,7 @@ ggplot(simpson_df, aes(x = Group, y = Simpson, fill = Group)) +
     comparisons = list(c("Mother", "Daughter"))
   ) +
   labs(
-    title = "Simpson Diversity by Group (Non-Rarefied)",
+    title = "Simpson Diversity by Group",
     x     = "Group",
     y     = "Simpson Index",
     color = "Age"
@@ -212,7 +212,7 @@ ggplot(simpson_diff, aes(x = Comparison, y = Simpson_Diff, fill = Comparison)) +
   scale_color_manual(values = c("Paired" = "#534AB7", "Unpaired" = "#D85A30")) +
   theme(legend.position = "none") +
   labs(
-    title = "Simpson Difference - Paired vs Unpaired (Non-Rarefied)",
+    title = "Simpson Difference - Paired vs Unpaired",
     x     = NULL,
     y     = "|Simpson Difference|"
   )
